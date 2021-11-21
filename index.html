@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the world wide book</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+    <h1 class="text-3xl font-bold text-yellow-600 text-center mt-5">Search your Book</h1>
+    <div class="flex justify-center w-9/12 mx-auto my-5">
+        <input id="input-book" placeholder="search your book" type="text"
+            class="block px-2 py-1 w-9/12 rounded-2xl bg-gray">
+        <button class="px-4 py-1 font-bold bg-yellow-500 text-1xl hover:bg-yellow-600 rounded ml-5"
+            id="search-btn">Search</button>
+    </div>
+    <!-- add the spinner  -->
+    <div class="loader hidden " id="load"></div>
+    <h1 id="no-result" class="text-2xl font-bold text-red-600 text-center hidden">No search result found !</h1>
+    <!-- show some data info -->
+    <div class="hidden" id="result-div">
+        <h1 class="text-2xl font-bold text-yellow-600 text-center">Result found : <span id="result-found"></span></h1>
+        <h1 class="text-2xl font-bold text-yellow-600 text-center">Result show : <span id="result-show"></span></h1>
+
+    </div>
+
+    <section id="add" class="container mx-auto gap-5 md:grid md:grid-cols-2 grid-cols-1 ">
+
+        <!-- here dynamically added data  -->
+
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
